@@ -1,12 +1,32 @@
 # cp_software
 
+## How to run tests
 Run the below python file to validate the copy operation
 
+```
 python cp_command_validation.py
 
+-------- Files list Output - Begin --------
+ping_test.yml
+hosts
+ansible-local.yml
+a_dir
+2.txt
+1.txt
+c_dir
+b_dir
+1.txt
+######## Files list Output - End ########
 
+All files are copied from src to dst
+Data integrity maintained
+```
+
+
+## How to run unit tests 
 To run unit tests:- 
 
+```
 (base) cp_software % python -m unittest -vv
 
 test_check_if_all_files_copied (test_helpers.TestHelpers)
@@ -26,3 +46,4 @@ Ran 5 tests in 0.004s
 
 OK
 (base) cp_software % 
+```
