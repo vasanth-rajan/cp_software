@@ -12,6 +12,9 @@ if __name__ == "__main__":
     # cp(src, dst) copy software does the copy from src tp destination
 
     dst_files = files_search.get_files_from_directory(dst)
+    print("\n-------- Files list Output - Begin --------")
+    print("\n".join(dst_files))
+    print("######## Files list Output - End ########\n")
 
     if check_if_all_files_copied(src_files, dst_files):
         print("All files are copied from src to dst")
