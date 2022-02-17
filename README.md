@@ -1,11 +1,14 @@
 # cp_software
 
 Run the below python file to validate the copy operation
+
 python cp_command_validation.py
 
 
 To run unit tests:- 
+
 (base) cp_software % python -m unittest -vv
+
 test_check_if_all_files_copied (test_helpers.TestHelpers)
 test to check all the files are copied from src to dst ... ok
 test_check_if_all_files_not_copied (test_helpers.TestHelpers)
